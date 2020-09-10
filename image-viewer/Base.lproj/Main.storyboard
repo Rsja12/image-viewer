@@ -71,14 +71,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hd7-EC-cTc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hd7-EC-cTc">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hd7-EC-cTc" firstAttribute="centerX" secondItem="0np-BS-NxT" secondAttribute="centerX" id="3UL-a8-Kyo"/>
+                            <constraint firstItem="hd7-EC-cTc" firstAttribute="centerY" secondItem="0np-BS-NxT" secondAttribute="centerY" id="Tk4-vX-J9e"/>
+                            <constraint firstItem="hd7-EC-cTc" firstAttribute="leading" secondItem="FiF-4d-T4K" secondAttribute="leading" id="gD0-0u-jKC"/>
+                            <constraint firstItem="hd7-EC-cTc" firstAttribute="top" secondItem="0np-BS-NxT" secondAttribute="topMargin" constant="-44" id="khf-B8-c40"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FiF-4d-T4K"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="hd7-EC-cTc" id="i5z-Sd-oDW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kk8-60-zXK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
