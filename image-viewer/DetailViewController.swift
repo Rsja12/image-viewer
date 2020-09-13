@@ -6,10 +6,13 @@
 //  Copyright © 2020 Alfonso. All rights reserved.
 //
 
+//TODO: Day 17 - Loading images with UIImageView
+
 import UIKit
 
 class DetailViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
+    var selectedImage: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
